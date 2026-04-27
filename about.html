@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | LearnCodeHub</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo2.png" />
+<style>
+
+  /* ABOUT */
+.about-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+color: #ffffff;
+padding: 50px 0;
+margin-bottom: 50px;
+margin-left: 50px;
+margin-right: 50px;
+border-bottom: #c5d1df solid 1px;
+}
+
+.about-text{
+width:55%;
+color:#c5d1df;
+line-height:1.6;
+font-size: 24px;
+}
+
+section h2{
+color: #ffffff;
+font-size: 32px;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 20px;
+}
+
+.about-image{
+  width: 40%;
+}
+img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* MISSION */
+.mission-section{
+padding: 0 0 100px 0;;
+border-bottom: #c5d1df solid 1px;}
+
+.mission-section p{
+width:60%;
+margin:auto;
+text-align:center;
+color:#c5d1df;
+line-height:1.6;
+font-size: 24px;
+
+}
+
+/* WHAT WE OFFER */
+.offer{
+padding: 50px 0;
+border-bottom: #c5d1df solid 1px;
+}
+
+.offer-grid{
+display:flex;
+justify-content:space-between;
+gap:30px;
+margin: 50px;
+}
+
+.offer-card{
+flex:1;
+background:#1e293b;
+padding:35px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow: #121313 0px 4px 8px;
+}
+
+.icon{
+font-size:28px;
+margin-bottom:10px;
+text-shadow: #c5d1df 1px 1px 2px;
+}
+
+.offer-card h3{
+font-size:16px;
+margin-bottom:8px;
+color: #ffffff;
+}
+
+.offer-card p{
+font-size:14px;
+color:#cbd5e1;
+}
+.offer-card:hover{
+background-color: #22d3eed3;
+color: #000;
+transition: 0.3s;
+transform: translateY(-5px);
+}
+/* WHY CHOOSE */
+.choose{
+padding: 50px 0;
+border-bottom: #c5d1df solid 1px;
+}
+
+.choose-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+width:50%;
+margin:auto;
+}
+
+.choose-box{
+background:#13233b;
+padding:15px;
+border-radius:12px;
+text-align:center;
+color:#c5d1df;
+}
+.choose-box:hover{
+background-color: #22d2ee;
+color: #000;
+transition: 0.3s;
+transform: translateY(-5px);
+}
+
+/* VISION */
+
+.vision-section p{
+width:50%;
+margin:auto;
+text-align:center;
+color:#c5d1df;
+}
+
+</style>
+</head>
+
+<body>
+      <!-- navbar -->
+     <nav>
+        <div class="logo">
+            <span>LearnCode</span> Hub
+        </div>
+        <div class="links">
+            
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+        </div>
+        <div class="getStartedButton">
+      <a href="courses.html"><button>Get Started</button></a>
+        </div>
+     </nav>
+     
+
+<div class="about-container">
+
+<!-- ABOUT -->
+
+<section>
+
+<h2>About LearnCodeHub</h2>
+
+<div class="about-content">
+
+<div class="about-text">
+LearnCodeHub is an online platform designed to help beginners learn coding in a simple
+and interactive way. Our goal is to make programming accessible to everyone.
+</div>
+
+<div class="about-image">
+<img src="https://i.pinimg.com/1200x/06/f2/dc/06f2dca6c9cf058540a7d5868e64be39.jpg" alt="">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section class="mission-section">
+
+<h2>Our Mission</h2>
+
+<p>
+To provide an easy and engaging platform where learners can understand programming concepts,
+practice coding, and build confidence in web development.
+</p>
+
+</section>
+
+
+<!-- WHAT WE OFFER -->
+
+<section class="offer">
+
+<h2>What We Offer</h2>
+
+<div class="offer-grid">
+
+<div class="offer-card">
+<div class="icon">📘</div>
+<h3>Step-by-Step Tutorials</h3>
+<p>Easy explanations of HTML, CSS, and JavaScript.</p>
+</div>
+
+<div class="offer-card">
+<div class="icon">💻</div>
+<h3>Interactive Coding Practice</h3>
+<p>Write and run code directly in the browser.</p>
+</div>
+
+<div class="offer-card">
+<div class="icon">🎯</div>
+<h3>Quizzes and Challenges</h3>
+<p>Test your knowledge after each topic.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="choose">
+
+<h2>Why Choose Us?</h2>
+
+<div class="choose-grid">
+
+<div class="choose-box">✓ Beginner-friendly learning</div>
+<div class="choose-box">✓ Interactive coding environment</div>
+<div class="choose-box">✓ Self-paced learning</div>
+<div class="choose-box">✓ Practice with real examples</div>
+
+</div>
+
+</section>
+
+
+<!-- VISION -->
+
+<section class="vision-section">
+
+<h2>Our Vision</h2>
+
+<p>
+To help students and beginners build strong coding skills and become confident developers.
+</p>
+
+</section></div>
+
+
+<!-- footer -->
+    <footer>
+      <div>
+        <div class="footercontent">
+          <h2>LearnCode-Hub</h2>
+          <p>Your Ultimate Coding Companion</p>
+          <ul>
+            <li>Choose a Course</li>
+            <li>Learn the Concept</li>
+            <li>Practice Coding</li>
+            <li>Take a Quiz</li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <p>Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="practice.html">Practice</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="courses-footer">
+          <p>Popular Courses</p>
+          <ul>
+            <li>HTML Basics</li>
+            <li>CSS Fundamentals</li>
+            <li>JavaScript Essentials</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 LearnCode-Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
+</body>
+</html>
