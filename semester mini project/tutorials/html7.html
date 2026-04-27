@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 7 - Forms</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="../logo2.png" />
+
+  <style>
+    nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #1e293b;
+            z-index: 1000;
+            padding: 0px 20px;
+            position: sticky;
+            top: 0;
+        }
+        nav .logo {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav .links ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            height: 100%;
+        }
+        nav .links ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            height: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 32px;
+        }
+        nav .getStartedButton button {
+            padding: 10px 20px;
+            background-color: #22d2ee;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav .getStartedButton button:hover {
+            background-color: #2563eb;
+            transition: all 0.3s ease;
+        }
+        nav span {
+            color: #22d2ee;
+        }
+        nav .links ul li a:hover {
+            color: #22d2ee;
+            transition: all 0.3s ease;
+        }
+        .active{
+            border-bottom: #22d2ee 2px solid;
+            
+        }
+  </style>
+</head>
+
+<body>
+<!-- navbar -->
+     <nav>
+        <div class="logo">
+            <span>LearnCode</span> Hub
+        </div>
+        <div class="links">
+            
+    <ul>
+        <li><a href="../index.html" >Home</a></li>
+        <li><a href="../about.html" >About</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="../practice.html">Practice</a></li>
+        <li><a href="../quiz.html">Quiz</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+
+        </div>
+        <div class="getStartedButton">
+        <a href="courses.html"><button>Get Started</button></a>
+        </div>
+     </nav>
+<div class="page">
+
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>HTML Lessons</h2>
+
+      <a href="html.html" data-lesson="html1">Lesson 1: Introduction</a>
+      <a href="html2.html" data-lesson="html2">Lesson 2: Tags</a>
+      <a href="html3.html" data-lesson="html3">Lesson 3: Text</a>
+      <a href="html4.html" data-lesson="html4">Lesson 4: Links & Images</a>
+      <a href="html5.html" data-lesson="html5">Lesson 5: Lists</a>
+      <a href="html6.html" data-lesson="html6">Lesson 6: Tables</a>
+      <a href="html7.html" data-lesson="html7">Lesson 7: Forms</a>
+      <a href="html8.html" data-lesson="html8">Lesson 8: Semantic Tags</a>
+      <a href="html9.html" data-lesson="html9">Lesson 9: Media</a>
+      <a href="html10.html" data-lesson="html10">Lesson 10: Project</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+      <h1>HTML Forms</h1>
+
+      <!-- THEORY -->
+      <h3>What is a Form?</h3>
+      <p>
+        Forms are used to collect user input like name, email, password, etc.
+      </p>
+
+      <h3>Basic Structure</h3>
+      <div class="code-box">
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text"&gt;<br>
+        &nbsp;&nbsp;&lt;button&gt;Submit&lt;/button&gt;<br>
+        &lt;/form&gt;
+      </div>
+
+      <h3>Common Input Types</h3>
+      <ul>
+        <li><b>text</b> → name</li>
+        <li><b>email</b> → email</li>
+        <li><b>password</b> → password</li>
+        <li><b>number</b> → numbers</li>
+      </ul>
+
+      <h3>Example</h3>
+      <div class="code-box">
+        &lt;form&gt;<br>
+        &nbsp;&nbsp;Name: &lt;input type="text"&gt;<br>
+        &nbsp;&nbsp;&lt;br&gt;<br>
+        &nbsp;&nbsp;Email: &lt;input type="email"&gt;<br>
+        &nbsp;&nbsp;&lt;br&gt;<br>
+        &nbsp;&nbsp;&lt;button&gt;Submit&lt;/button&gt;<br>
+        &lt;/form&gt;
+      </div>
+
+      <hr>
+
+      <!-- PRACTICE -->
+      <h2>Try It Yourself 👇</h2>
+
+      <textarea id="code">
+<h2>Signup Form</h2>
+
+<form>
+  Name: <input type="text"><br><br>
+  Email: <input type="email"><br><br>
+  Password: <input type="password"><br><br>
+
+  <button>Submit</button>
+</form>
+      </textarea>
+
+      <button onclick="runHTML()">Run Code</button>
+
+      <iframe id="output"></iframe>
+
+      <button onclick="markComplete('html7')">
+        Mark as Completed
+      </button>
+
+    </div>
+
+  </div>
+
+ 
+ 
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

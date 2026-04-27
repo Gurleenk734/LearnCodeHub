@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Quiz - LearnCodeHub</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="logo2.png" />
+ 
+  <style>
+    .content {
+      padding: 40px;
+      color:white;
+    }
+
+    .question {
+      background: #020c1b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border-left: 4px solid #2fd3e2;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .correct {
+      border-left: 4px solid #4caf50;
+    }
+
+    .wrong {
+      border-left: 4px solid #ff4d4d;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #2fd3e2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1f4068;
+      color: #2fd3e2;
+    }
+
+    .code-box {
+      background: #020c1b;
+      padding: 10px;
+      border-radius: 6px;
+      color: #64ffda;
+      margin: 10px 0;
+      font-family: monospace;
+      border-left: 3px solid #2fd3e2;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><span>LearnCode</span> Hub</div>
+
+    <div class="links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="getStartedButton">
+      <a href="courses.html"><button>Get Started</button></a>
+      
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="content">
+
+      <h1>HTML Quiz</h1>
+
+      <!-- THEORY QUESTIONS -->
+
+      <div class="question" id="q1-box">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" value="c"> Hyper Tool Markup Language</label>
+        <label><input type="radio" name="q1" value="b"> High Tech Machine Language</label>
+        <label><input type="radio" name="q1" value="d"> None of the above</label>
+      </div>
+
+      <div class="question" id="q2-box">
+        <p>2. Which tag is used for paragraphs?</p>
+        <label><input type="radio" name="q2" value="a"> &lt;div&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;p&gt;</label>
+        <label><input type="radio" name="q2" value="b"> p</label>
+        <label><input type="radio" name="q2" value="b"> &lt;paragraph&gt;</label>
+
+      </div>
+
+      <div class="question" id="q3-box">
+        <p>3. Which tag creates a link?</p>
+        <label><input type="radio" name="q3" value="a"> &lt;a&gt;</label>
+        <label><input type="radio" name="q3" value="q3"> &lt;img&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;p&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;link&gt;</label>
+
+      </div>
+
+      <div class="question" id="q4-box">
+        <p>4. Which tag is used to insert an image?</p>
+        <label><input type="radio" name="q4" value="a"> &lt;img&gt;</label>
+        <label><input type="radio" name="q4" value="b"> &lt;table&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;image&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;pic&gt;</label>
+
+      </div>
+
+      <div class="question" id="q5-box">
+        <p>5. Which tag creates a list?</p>
+        <label><input type="radio" name="q5" value="a"> &lt;ul&gt;</label>
+        <label><input type="radio" name="q5" value="b"> &lt;form&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;p&gt;</label>
+        <label><input type="radio" name="q2" value="b"> &lt;list&gt;</label>
+      </div>
+
+      <!-- CODE QUESTIONS -->
+
+      <div class="question" id="q6-box">
+        <p>6. What will this display?</p>
+        <div class="code-box">&lt;h1&gt;Hello&lt;/h1&gt;</div>
+        <label><input type="radio" name="q6" value="a"> Big heading "Hello"</label>
+        <label><input type="radio" name="q6" value="b"> Small text</label>
+        <label><input type="radio" name="q2" value="b"> hello</label>
+        <label><input type="radio" name="q2" value="b"> &lth1&gt;Hello&lt;/h1&gt;</label>
+      </div>
+
+      <div class="question" id="q7-box">
+        <p>7. What does this do?</p>
+        <div class="code-box">&lt;a href="https://google.com"&gt;Click&lt;/a&gt;</div>
+        <label><input type="radio" name="q7" value="a"> Displays image</label>
+        <label><input type="radio" name="q7" value="b"> Creates a link</label>
+        <label><input type="radio" name="q7" value="b"> Display google.com</label>
+        <label><input type="radio" name="q7" value="b"> Nothing</label>
+      </div>
+
+      <div class="question" id="q8-box">
+        <p>8. What will this create?</p>
+        <div class="code-box">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</div>
+        <label><input type="radio" name="q8" value="a"> Table</label>
+        <label><input type="radio" name="q8" value="b"> List</label>
+        <label><input type="radio" name="q8" value="b"> Item</label>
+        <label><input type="radio" name="q8" value="b"> Nothing
+      </div>
+
+      <div class="question" id="q9-box">
+        <p>9. What is missing in this tag?</p>
+        <div class="code-box">&lt;img&gt;</div>
+        <label><input type="radio" name="q9" value="a"> src attribute</label>
+        <label><input type="radio" name="q9" value="b"> class attribute</label>
+        <label><input type="radio" name="q9" value="b"> alt attribute</label>
+        <label><input type="radio" name="q9" value="b"> Nothing
+      </div>
+
+      <div class="question" id="q10-box">
+        <p>10. What will this form do?</p>
+        <div class="code-box">&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</div>
+        <label><input type="radio" name="q10" value="a"> Accept user input</label>
+        <label><input type="radio" name="q10" value="b"> Show image</label>
+        <label><input type="radio" name="q10" value="b"> Create a link</label>
+        <label><input type="radio" name="q10" value="b"> Nothing
+      </div>
+
+      <button onclick="checkQuiz()">Submit Quiz</button>
+
+      <h2 id="result"></h2>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function checkQuiz() {
+
+  let score = 0;
+
+  const answers = {
+    q1: "a",
+    q2: "b",
+    q3: "a",
+    q4: "a",
+    q5: "a",
+    q6: "a",
+    q7: "b",
+    q8: "b",
+    q9: "a",
+    q10: "a"
+  };
+
+  for (let q in answers) {
+    let selected = document.querySelector(`input[name="${q}"]:checked`);
+    let box = document.getElementById(q + "-box");
+
+    if (selected) {
+      if (selected.value === answers[q]) {
+        score++;
+        box.classList.add("correct");
+      } else {
+        box.classList.add("wrong");
+      }
+    } else {
+      box.classList.add("wrong");
+    }
+  }
+
+  // Save score
+  localStorage.setItem("htmlQuizScore", score);
+
+  let msg = "Your Score: " + score + "/10";
+
+  if(score === 10) msg += " 🎉 Excellent!";
+  else if(score >= 6) msg += " 👍 Good Job!";
+  else msg += " 😅 Keep Practicing!";
+
+  document.getElementById("result").innerText = msg;
+}
+</script>
+
+</body>
+</html>
